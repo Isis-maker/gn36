@@ -1,0 +1,8 @@
+services:
+    gn36.firstpostedit.listener:
+        class: gn36\firstpostedit\event\listener
+        arguments:
+            - @auth
+            - @user
+        tags:
+            - { name: event.listener }
